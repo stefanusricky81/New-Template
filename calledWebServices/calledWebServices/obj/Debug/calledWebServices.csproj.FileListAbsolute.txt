@@ -1,0 +1,12 @@
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\bin\Debug\calledWebServices.exe.config
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\bin\Debug\calledWebServices.exe
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\bin\Debug\calledWebServices.pdb
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\obj\Debug\calledWebServices.csprojResolveAssemblyReference.cache
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\obj\Debug\calledWebServices.Form1.resources
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\obj\Debug\calledWebServices.Properties.Resources.resources
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\obj\Debug\calledWebServices.csproj.GenerateResource.Cache
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\obj\Debug\calledWebServices.exe
+D:\Rolyvan\Projects\calledWebServices\calledWebServices\obj\Debug\calledWebServices.pdb
+D:\My Template Source Code\calledWebServices\calledWebServices\calledWebServices\bin\Debug\calledWebServices.exe.config
+D:\My Template Source Code\calledWebServices\calledWebServices\calledWebServices\obj\Debug\calledWebServices.exe
+D:\My Template Source Code\calledWebServices\calledWebServices\calledWebServices\obj\Debug\calledWebServices.pdb
