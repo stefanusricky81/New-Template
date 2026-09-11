@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Site3.master.cs" Inherits="Site3" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="HeadContent" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="MainContent" Runat="Server">
+    <div>
+        <h1 class="kirkan-h1">LITTLE SUPER STAR FASHION</h1>
+    </div><br />
+    <div id="kirkan" >
+        <div id="kiri">
+            <asp:ContentPlaceHolder ID="kirir" runat="server"/>
+        </div>
+        <div id="kanan">
+            <asp:ContentPlaceHolder ID="kananr" runat="server"/>
+        </div>
+    </div>
+</asp:Content>
+

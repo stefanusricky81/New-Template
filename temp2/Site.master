@@ -1,0 +1,164 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title>Little Superstar Fashion</title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!--[if IE 6]>
+    <link rel="stylesheet" type="text/css" href="iecss.css" />
+    <![endif]-->
+    <script type="text/javascript" src="js/boxOver.js" ></script>
+    <script type="text/javascript" src="mdlFunction.js" ></script>
+    <!--For Zoom image -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.shadow.js"></script>
+    <script type="text/javascript" src="js/jquery.fancyzoom.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+
+    <div id="main_container">
+        <div id="header">
+            <div class="top_right">
+                <div class="big_banner">
+                    <p>WELCOME, <asp:Label ID="lblUserId" runat="server" /> | <a href="SignIn.aspx"><asp:Label ID="lblSign" Text="SIGN IN" runat="server" /></a> | <a href="ConfirmationPayment.aspx">CONFIRM PAYMENT</a> </p>
+                    <asp:TextBox runat="server" Width="120" />&nbsp&nbsp&nbsp <a href="CCart.aspx">My Bag</a>
+                    <!-- 
+                    <div class="product_title">Item :
+                            <asp:Label ID="lblItemCart" runat="server" />
+                    </div>
+                    <div class="product_title">Price :
+                        <asp:Label ID="lblPrice" runat="server" /> 
+                    </div>
+                     
+                     -->
+                    
+                </div>
+            </div>
+            <div id="logo"> 
+                <a href=""><img src="images/lss logo.JPG" alt="" border="0" width="182" height="125" /></a> 
+            </div> 
+            <div class="bottom_right">
+                <a>
+                    <a href="http://iconosquare.com/tag/siscabutik">
+                        <img src="images/Instagram.jpg" alt="" title="Instagram" width="40" />
+                    </a>
+                    <a href='https://www.facebook.com/siscawidjaja.littlesuperstar'>
+                        <img src="images/facebook.jpg" alt="" title="facebook" width="40" />
+                    </a>
+                    <a href='https://twitter.com/littlesuper5tar'>
+                        <img src="images/tweeter.jpg" alt="" title="tweeter" width="40" />
+                    </a>
+                    <a href='#'>
+                        <img src="images/path.jpg" alt="csscreme" title="path" width="40" />
+                    </a>
+                </a>
+            </div>    
+        </div>
+        
+        <div id="main_content">
+             <div id="menu_tab">
+                <ul class="menu_ori">
+                    <li><a href="Home.aspx"> HOME </a></li>
+                    <li class="divider"></li>
+                    <li><a href="About.aspx" >ABOUT</a></li>
+                    <li class="divider"></li>
+                    <li><a href="LssCouture.aspx" class="nav">LITTLE SUPERSTAR COUTURE</a></li>
+                    <li class="divider"></li>
+                    <li><a href="Lss.aspx" class="nav">LITTLE SUPERSTAR</a></li>
+                    <li class="divider"></li>
+                    <li><a href="Moms.aspx" class="nav">MOMS</a></li>
+                    <li class="divider"></li>
+                    <li><a href="Accessories.aspx" class="nav">ACCESSORIES</a></li>
+                    <li class="divider"></li>
+                    <li><a href="EventPromo.aspx" class="nav">EVENT & PROMOTION</a></li>
+                    <li class="divider"></li>
+                    <li><a href="ContactUs.aspx" class="nav">CONTACT US </a></li>
+                    
+                    <li class="divider"></li>
+                    <li><a href="sale.aspx" class="nav">SALE</a></li>
+                    <li class="divider"></li>
+                    <!--
+                    -->
+                </ul>
+            </div>            
+
+            <div class="center_content">
+                <asp:Label ID="tStatus" runat="server" />
+                <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+            </div>           
+            
+        </div>
+
+        <div class="footer">
+            <div class="left_footer">                
+                <ul>
+                    <li>INFORMATION</li>
+                    <ul>
+                        <li><a href="HowToOrder.aspx">How to Order</a> </li>
+                        <li><a href="#">Term and Policy</a> </li>
+                        <li><a href="About.aspx">About us</a> </li>
+                        <li><a href="ContactUs.aspx">Contact</a> </li>
+                    </ul>                    
+                </ul>
+
+                <ul>
+                    <li>USEFULL LINKS</li>
+                    <ul>
+                        <li><a href="LssCouture.aspx">Little Superstar Couture</a> </li>
+                        <li><a href="#">Baby</a> </li>
+                        <li><a href="#">Girls</a> </li>
+                        <li><a href="#">Boys</a> </li>
+                        <li><a href="#">Mom & Me</a> </li>
+                        <li><a href="Accessories.aspx">Accesories</a> </li>
+                        <li><a href="Sale.aspx">Sale</a> </li>
+                    </ul>                    
+                </ul>
+            </div>
+            
+            <asp:Panel ID="pnlAdmin" Visible="false" runat="server" >
+                <div id="divAdmin" class="left_footer">
+                    <ul>
+                        <li>ADMIN</li>
+                        <ul>
+                            <li><a href="AdminHome.aspx">Master Home</a></li>
+                            <li><a href="AdminAboutUs.aspx">Master About Us</a></li>
+                            <li><a href="AdminContactUs.aspx">Master Contact Us</a></li>
+                            <li><a href="AdminUploadProduct.aspx">Upload Product</a> </li>
+                            <li><a href="AdminBank.aspx">Master Bank</a></li>
+                            <li><a href="AdminBankAccount.aspx">Bank Account</a></li>
+                            <li><a href="AdminColor.aspx">Master Color</a></li>
+                            <li><a href="AdminSize.aspx">Master Size</a></li>
+                            <li><a href="AdminStock.aspx">Master Stock</a></li>
+                            <li><a href="AdminEkpedisi.aspx">Master Ekpedisi</a></li>
+                            <li><a href="OrderHeader.aspx">Order Header</a></li>
+                            <li><a href="AdminEventAndPromotion.aspx">Event & Promotion</a></li>
+                            <li><a href="AdminDetailPictureProduct.aspx">Detail Picture Product</a></li>
+                        </ul>                    
+                    </ul>
+                </div>
+            </asp:Panel>
+            <!--
+            <div class="right_footer"> 
+                <a href="#">
+                    <img src="images/like.jpg" alt="csscreme" title="csscreme" border="0" height="150" width="250" />
+                </a>
+            </div>
+            -->
+        </div>
+        <div class="copyrights">
+            Copyrights (c) Littlesuperstar 2014. All Right Reserved
+        </div>
+    </div>
+
+ </form>   
+</body>
+</html>
