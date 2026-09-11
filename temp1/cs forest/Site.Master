@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="cs_forest.Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Customer Service</title>
+    <link href="Styles/Style.css" rel="stylesheet" />
+      <link href="Styles/bootstrap.css" rel="stylesheet" />
+    <style>
+        h1.header {color:#343434;font-size:16px;border-bottom:solid #808080 2px;}
+        .field-help {
+            white-space: normal;
+            word-wrap: break-word;
+            width: 100%;
+            max-width: 635px;
+            font-size: .75em;
+            line-height: 1.84615385em;
+            font-weight: 600;
+            position: relative;
+            color: #147049;
+            margin: 2px 0 0 5px;
+        }
+
+        .field-wrapper input[type="text"] ~ .field-help, .field-wrapper input[type="number"] ~ .field-help, .field-wrapper input[type="email"] ~ .field-help, .field-wrapper input[type="url"] ~ .field-help, .field-wrapper input[type="tel"] ~ .field-help, .field-wrapper input[type="password"] ~ .field-help, .field-wrapper textarea ~ .field-help {
+            -ms-transition: all .25s ease-in-out 0s;
+            transition: all .25s ease-in-out 0s;
+            display: block;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+        }
+
+        .field-wrapper input[type="text"]:focus ~ .field-help, .field-wrapper input[type="number"]:focus ~ .field-help, .field-wrapper input[type="email"]:focus ~ .field-help, .field-wrapper input[type="url"]:focus ~ .field-help, .field-wrapper input[type="tel"]:focus ~ .field-help, .field-wrapper input[type="password"]:focus ~ .field-help, .field-wrapper textarea:focus ~ .field-help, .field-wrapper input[type="text"]:active ~ .field-help, .field-wrapper input[type="number"]:active ~ .field-help, .field-wrapper input[type="email"]:active ~ .field-help, .field-wrapper input[type="url"]:active ~ .field-help, .field-wrapper input[type="tel"]:active ~ .field-help, .field-wrapper input[type="password"]:active ~ .field-help, .field-wrapper textarea:active ~ .field-help {
+            opacity: 1;
+            max-height: 200px;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="font-family: Helvetica,Arial,sans-serif; width: 100%; vertical-align: top; margin: 0; padding: 0; background-color: #FCFCFC;">
+    <form id="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div class="navbar" >
+            <div style="float:left;">
+                <img src="images/forest-interactive-logo.png" />
+            </div>
+            <div style="float:left; margin-left:100px; font-size:small;">
+                <p>Welcome to the Forest Customer Service Portal for Telco's</p>
+            </div>
+            <div style="float:right">
+                <table>
+                    <tr>
+                        <td id="menu_home" runat="server" style="text-align: center; width: 30px; border-right: solid 1px #06614B; padding: 0 15px;"><a style="text-decoration: none; font-size: 15px; color: #fff;" href="menu.aspx">
+                            <img src="images/home-icon.png" alt="Home" title="Home" /></a></td>
+                        <td id="menu_dashboard" runat="server" style="text-align: center; width: 30px; border-right: solid 1px #06614B; padding-right: 15px;"><a style="text-decoration: none; font-size: 15px; color: #fff;" href='<%= "dashboard.aspx?id=" + Request.QueryString["id"] + "&source=" + Request.QueryString["source"] + "&name=" + Request.QueryString["name"] %>'>
+                            <img src="images/dashboard-icon.png" alt="Dsahboard" title="Dashboard" /></a></td>
+                        <td id="menu_manageuser" runat="server" style="text-align: center; width: 30px; border-right: solid 1px #06614B; padding: 0 15px;"><a style="text-decoration: none; font-size: 15px; color: #fff;" href="manageuser.aspx">
+                            <img src="images/create-new-user-icon.png" alt="Create New User" title="Manage User" /></a></td>
+                        <td id="menu_changepassword" runat="server" style="text-align: center; width: 30px; padding:0 15px;border-right: solid 1px #06614B;"><a style="text-decoration: none; font-size: 15px; color: #fff;" href='<%= "changepassword.aspx?id=" + Request.QueryString["id"] + "&source=" + Request.QueryString["source"] + "&name=" + Request.QueryString["name"] %>'>
+                            <img src="images/change-password-icon.png" alt="Change Password" title="Change Password" /></a></td>
+                        <td id="menu_logout" runat="server" style="text-align: center; width: 30px; padding-left: 10px;"><a style="text-decoration: none; font-size: 15px; color: #fff;" href="login.aspx?type=logout">
+                            <img src="images/logout-icon.png" alt="Logout" title="Logout" /></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div style="margin:10px;width:98.5%;min-height:550px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+    <footer class="footer" style="text-align:center;">
+            <p style="margin: 0px 0">Copyright © 2014 <a style="text-decoration: none; color: #fff;" href="http://forest-interactive.com/">Forest Interactive Sdn. Bhd.</a>&nbsp; All Rights Reserved.</p>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteSMPP.Master" AutoEventWireup="true" CodeBehind="SMPPListUser.aspx.cs" Inherits="cs_forest.SMPPListUser" %>
+<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div style="width: 100%; text-align: right; margin: auto auto 5px auto;">
+        <dx:ASPxButton ID="btnDelete" runat="server" Text="Delete" OnClick="btnDelete_Click" Theme="DevEx">
+            <ClientSideEvents Click="function(s,e) { e.processOnServer = confirm('Are you sure to delete the selected user?'); }" />
+        </dx:ASPxButton>
+    </div>
+    <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" KeyFieldName="id" SettingsPager-PageSize="20" Width="100%" Theme="Office2010Black">
+        <Columns>
+            <dx:GridViewCommandColumn ShowClearFilterButton="True" VisibleIndex="0" SelectAllCheckboxMode="Page" ShowSelectCheckbox="True"></dx:GridViewCommandColumn>
+            <dx:GridViewDataTextColumn FieldName="id" ReadOnly="True" VisibleIndex="1" Visible="false"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="system_id" Caption="System Id" VisibleIndex="2"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="password" Caption="Password" VisibleIndex="3"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="system_type" Caption="System Type" VisibleIndex="4"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataDateColumn FieldName="allowed_id" Caption="Allowed Id" VisibleIndex="5" Visible="false"></dx:GridViewDataDateColumn>
+            <dx:GridViewDataTextColumn FieldName="status" Caption="Status" VisibleIndex="6"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataColumn Caption="Edit" VisibleIndex="8" Width="50">
+                <DataItemTemplate>
+                    <dx:ASPxHyperLink ID="ASPxHyperLink1" runat="server" Text="Edit" Theme="Office2010Black" NavigateUrl='<%# "smppadduser.aspx?type=update&id=" + DataBinder.Eval(Container.DataItem, "id") + "&system_id=" + DataBinder.Eval(Container.DataItem, "system_id") + "&password=" + DataBinder.Eval(Container.DataItem, "password") + "&system_type=" + DataBinder.Eval(Container.DataItem, "system_type") + "&allowed_id=" + DataBinder.Eval(Container.DataItem, "allowed_id") %>'>
+                    </dx:ASPxHyperLink>
+                </DataItemTemplate>
+            </dx:GridViewDataColumn>
+        </Columns>
+    </dx:ASPxGridView>
+</asp:Content>

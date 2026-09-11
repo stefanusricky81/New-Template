@@ -1,0 +1,18 @@
+C:\sms-korea\cs forest\bin\cs forest.dll
+C:\sms-korea\cs forest\bin\cs forest.pdb
+C:\sms-korea\cs forest\bin\MySql.Data.dll
+C:\sms-korea\cs forest\obj\Release\cs forest.csprojResolveAssemblyReference.cache
+C:\sms-korea\cs forest\obj\Release\cs forest.dll.licenses
+C:\sms-korea\cs forest\obj\Release\cs forest.dll
+C:\sms-korea\cs forest\obj\Release\cs forest.pdb
+C:\sms-korea\cs forest\bin\EPPlus.dll
+C:\sms-korea\cs forest\bin\EPPlus.xml
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\obj\Release\cs forest.csprojResolveAssemblyReference.cache
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\obj\Release\cs forest.dll.licenses
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\obj\Release\cs forest.dll
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\obj\Release\cs forest.pdb
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\bin\cs forest.dll
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\bin\cs forest.pdb
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\bin\EPPlus.dll
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\bin\MySql.Data.dll
+C:\Users\user\Documents\Ricky Folder\Office Document\CSTools\cs forest\bin\EPPlus.xml

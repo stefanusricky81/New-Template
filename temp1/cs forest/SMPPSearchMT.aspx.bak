@@ -1,0 +1,60 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/SiteSMPP.Master" AutoEventWireup="true" CodeBehind="SMPPSearchMT.aspx.cs" Inherits="cs_forest.SMPPSearchMT" %>
+<%@ Register Assembly="DevExpress.Web.v14.2, Version=14.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+        <ContentTemplate>
+            <div style="width: 100%; text-align: center">
+                <img src="Images/globe-smpp-management.png" />
+            </div>
+            <div style="text-align: center" runat="server" id="panel_globe">
+                <div class="dashboard-form" style="margin: 0 5px 20px 5px; display: inline-block;">
+                    <h3>MT</h3>
+                    <span style="color: #333333; font-size: 14px">Search by </span>
+                    <asp:RadioButton ID="RBMsisdn" GroupName="type" Font-Size="10" ForeColor="#333333" runat="server" Text="Msisdn" AutoPostBack="true" OnCheckedChanged="RBMsisdn_CheckedChanged"/>
+                    <asp:RadioButton ID="RBMessageId" GroupName="type" Font-Size="10" ForeColor="#333333" runat="server" Text="Message Id" AutoPostBack="true" OnCheckedChanged="RBMessageId_CheckedChanged"/>
+                    <div style="margin-top: 7px;">
+                        <img src="images/phone-icon.png" style="vertical-align: middle; margin-right: 3px;" />
+                        <asp:TextBox ID="txtGlobeMsisdn" runat="server" Width="178" MaxLength="15" CssClass="input" onkeypress="return isNumber(event)" onblur="if(this.value=='')this.value='MSISDN (e.g 60127654321)';" value="MSISDN (e.g 60127654321)" onfocus="if(this.value=='MSISDN (e.g 60127654321)')this.value='';"></asp:TextBox>
+                        <asp:TextBox ID="txtGlobeMsgId" runat="server" Width="178" MaxLength="15" CssClass="input" onblur="if(this.value=='')this.value='Message Id (e.g 8hsg6ak3)';" value="Message Id (e.g 8hsg6ak3)" onfocus="if(this.value=='Message Id (e.g 8hsg6ak3)')this.value='';"></asp:TextBox>
+                    </div>
+                    <asp:Button ID="btnSearchMysql" runat="server" OnClick="btnSearchMysql_Click" Text="Search" CssClass="btn" />
+                </div>
+            </div>
+        </ContentTemplate>
+    </asp:UpdatePanel>
+
+    <dx:ASPxGridView ID="ASPxGridView1" runat="server" AutoGenerateColumns="False" Width="100%" Theme="Office2010Black" EnableTheming="True" KeyFieldName="id" SettingsPager-PageSize="50" Settings-UseFixedTableLayout="false">
+        <Columns>
+            <dx:GridViewDataTextColumn FieldName="id" ReadOnly="True" VisibleIndex="1" Visible="false"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="smpp_user" ReadOnly="True" VisibleIndex="2" Caption="smpp_user" Visible="true"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="sender_number" ReadOnly="True" VisibleIndex="3" Caption="sender_number"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="receiver_number" ReadOnly="True" VisibleIndex="4" Caption="receiver_number"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="message_id" ReadOnly="True" VisibleIndex="5" Caption="message_id"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="http_response" ReadOnly="True" VisibleIndex="6" Caption="http_response" Visible="false"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="dn_status" ReadOnly="True" VisibleIndex="7" Caption="dn_status" Visible="true"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="sms_sent_time" ReadOnly="True" VisibleIndex="8" Caption="sms_sent_time">
+                <PropertiesTextEdit DisplayFormatString="dd/MM/yyyy HH:mm:ss"></PropertiesTextEdit>
+            </dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="dn_received_time" ReadOnly="True" VisibleIndex="9" Caption="dn_received_time" Visible="true">
+                <PropertiesTextEdit DisplayFormatString="dd/MM/yyyy HH:mm:ss"></PropertiesTextEdit>
+            </dx:GridViewDataTextColumn>
+
+            <dx:GridViewDataTextColumn FieldName="http_api_id" ReadOnly="True" VisibleIndex="10" Caption="http_api_id" Visible="true"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="sms_coding" ReadOnly="True" VisibleIndex="11" Caption="sms_coding" Visible="true"></dx:GridViewDataTextColumn>
+            <dx:GridViewDataTextColumn FieldName="udh" ReadOnly="True" VisibleIndex="12" Caption="udh" Visible="true"></dx:GridViewDataTextColumn>
+
+            <dx:GridViewDataTextColumn FieldName="message" ReadOnly="True" VisibleIndex="13" Caption="message"></dx:GridViewDataTextColumn>
+        </Columns>
+        <SettingsDataSecurity AllowEdit="False" AllowInsert="False" AllowDelete="False"></SettingsDataSecurity>
+    </dx:ASPxGridView>
+
+    <asp:UpdateProgress ID="updProgress"
+        AssociatedUpdatePanelID="UpdatePanel1"
+        runat="server">
+        <ProgressTemplate>
+            <img alt="progress" src="Images/ajax-loader.gif" class="Absolute-Center" />
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+</asp:Content>

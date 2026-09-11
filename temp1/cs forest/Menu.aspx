@@ -1,0 +1,37 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Menu.aspx.cs" Inherits="cs_forest.Menu" %>
+
+<%@ Register Assembly="DevExpress.Web.v16.1, Version=16.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web" TagPrefix="dx" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     <script>
+         function goBack()
+         {
+            window.history.back();
+         }
+        
+    </script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <button onclick="goBack()" class="login-btn">Go Back</button>
+    <div style="text-align: center" runat="server" id="panel_default">
+        <p style="color: green">Download User</p>
+    </div>
+    <div style="text-align: center" runat="server" id="Div1">
+        <p  style="color: green">
+            Please select the Telco of your choice by clicking on the Telco Logo</p>
+        <dx:ASPxButton ID="btnDownload" runat="server" Text="Download" Theme="Youthful" OnClick="btnDownload_Click" CssClass"login-btn"></dx:ASPxButton>
+    </div>
+    <asp:DataList ID="DataList1" runat="server" RepeatColumns="5" Style="margin: auto">
+        <ItemTemplate>
+            <div style="margin: 20px 7px; display: inline-block; text-align: center">
+                <a href='<%# "dashboard.aspx?id=" + Eval("id") + "&source=" + Eval("Source") + "&name=" + Eval("Name") %>'>
+                    <img alt="logo" src='<%# "images/" + Eval("logo") %>' />
+                </a>
+                <br />
+                <%# Eval("name") %>
+            </div>
+        </ItemTemplate>
+    </asp:DataList>
+    <br />
+  
+</asp:Content>
