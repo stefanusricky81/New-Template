@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="TopModelIndo" Class="WallPaperListDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=localhost;Initial Catalog=TopModelIndo;Persist Security Info=True;User ID=dbuser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="TopModelIndoConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.WallPaperList" Member="WallPaperLists">
+    <Type Name="WallPaperList">
+      <Column Name="WallPaperId" Type="System.String" DbType="NVarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DateCreated" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="WallPaperTitle" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WallPaperDescription" Type="System.String" DbType="NVarChar(500)" CanBeNull="true" />
+      <Column Name="WallPaperArtist" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="WallPaperLogo" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WallPaperAddress" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="WallPaperCounter" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="WAP" Type="System.String" DbType="NVarChar(3)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
