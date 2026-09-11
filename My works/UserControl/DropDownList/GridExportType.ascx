@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="GridExportType.ascx.cs" Inherits="UserControl_DropDownList_GridExportType" %>
+<asp:DropDownList ID="ddlExportType" runat="server" Width="100" Height="20" />
