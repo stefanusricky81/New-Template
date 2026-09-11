@@ -1,0 +1,36 @@
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe.config
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.pdb
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Form1.resources
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Properties.Resources.resources
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csproj.GenerateResource.Cache
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.exe
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.pdb
+D:\Source Code\SendMailKahuripan\SendMailE-Recruitment\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csprojResolveAssemblyReference.cache
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe.config
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.exe
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.pdb
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.pdb
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csprojResolveAssemblyReference.cache
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Form1.resources
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Properties.Resources.resources
+C:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csproj.GenerateResource.Cache
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe.config
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.exe
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.pdb
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csprojResolveAssemblyReference.cache
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Form1.resources
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Properties.Resources.resources
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csproj.GenerateResource.Cache
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe
+D:\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.pdb
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe.config
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.exe
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\bin\Release\SendEmailE-Recruitment.pdb
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csprojResolveAssemblyReference.cache
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Form1.resources
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE_Recruitment.Properties.Resources.resources
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.csproj.GenerateResource.Cache
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.exe
+D:\Data Backup 2018\Source Code\SendEmailE-Recruitment\SendEmailE-Recruitment\obj\Release\SendEmailE-Recruitment.pdb
