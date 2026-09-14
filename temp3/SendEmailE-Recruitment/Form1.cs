@@ -60,9 +60,7 @@ namespace SendEmailE_Recruitment
             try
             {
                 MailMessage mm = new MailMessage();
-                //mm.From = new MailAddress("Tiara.fatwa@londonsumatra.com");
-                //mm.From = new MailAddress("Recruitment@londonsumatra.com");
-
+           
                 mm.From = new MailAddress("x.com");
                 mm.Subject = "[E-Recruitment] Verify Your Email";//untuk ganti subject email
 
@@ -74,8 +72,7 @@ namespace SendEmailE_Recruitment
                 System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
                 NetworkCred.UserName = "x";
                 NetworkCred.Password = "x";
-                //NetworkCred.UserName = "stefanus.ricky@londonsumatra.com";
-                //NetworkCred.Password = "Ricky123!";
+                
                 smtp.UseDefaultCredentials = true;
                 smtp.Credentials = NetworkCred;
                 smtp.Port = 25;//Specify your port No;
@@ -83,23 +80,7 @@ namespace SendEmailE_Recruitment
                 return "Success";
             }
 
-            #region unuse
-            //MailMessage mail = new MailMessage();
-            //SmtpClient SmtpServer = new SmtpClient();
-            //mail.To.Add(to);
-            //mail.From = new MailAddress("Recruitment@Londonsumatra.com");
-            //mail.Subject = "[E-Recruitment] Verify Your Email";
-            //mail.IsBodyHtml = true;
-            //mail.Body = "Please Click <a href = '" + url + "'><u>Here</u></a> To Confirm Your's Email";
-            //SmtpServer.Host = "vsexcjkt01.londonsumatra.com";
-            //SmtpServer.Port = 25;
-            //SmtpServer.Credentials = CredentialCache.DefaultNetworkCredentials;
-            //try
-            //{
-            //    SmtpServer.Send(mail);
-            //    return "Success";
-            //}
-            #endregion
+   
             catch (Exception ex)
             {
                 Tools.write_log(DateTime.Now.ToString() + "," + "SendEmail" + "," + ex.Message, "ErrSendEmail");
