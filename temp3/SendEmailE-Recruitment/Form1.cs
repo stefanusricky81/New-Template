@@ -36,7 +36,7 @@ namespace SendEmailE_Recruitment
             //    for (int i = 0; i < dt.Rows.Count; i++)
             //    {
             //        email = dt.Rows[i][0].ToString();
-                    status = sendmail("stefanus.ricky@londonsumatra.com");//ganti alamat email disini
+                    status = sendmail("com.com");//ganti alamat email disini
             //        if (status == "Success")
             //        {
             //            a.UpdateSendEmail(ref email);
@@ -56,24 +56,24 @@ namespace SendEmailE_Recruitment
         {
             SmtpClient smtp = new SmtpClient();
             string url = string.Empty;
-            url = "http://www.londonsumatra.com/VerifyEmail.aspx?email=" + to;
+            url = "http://www.x.com/VerifyEmail.aspx?email=" + to;
             try
             {
                 MailMessage mm = new MailMessage();
                 //mm.From = new MailAddress("Tiara.fatwa@londonsumatra.com");
                 //mm.From = new MailAddress("Recruitment@londonsumatra.com");
 
-                mm.From = new MailAddress("Lonsum.e-Apps@londonsumatra.com");
+                mm.From = new MailAddress("x.com");
                 mm.Subject = "[E-Recruitment] Verify Your Email";//untuk ganti subject email
 
                 mm.Body = "Please Click To Confirm Your's Email";//untuk ganti isi body email
                 mm.IsBodyHtml = true;
                 mm.To.Add(new MailAddress(to));
-                smtp.Host = "mail.londonsumatra.com";//excarray.londonsumatra.com
+                smtp.Host = "mail.x.com";//excarray.londonsumatra.com
                 smtp.EnableSsl = false; //Depending on server SSL Settings true/false
                 System.Net.NetworkCredential NetworkCred = new System.Net.NetworkCredential();
-                NetworkCred.UserName = "e-apps";
-                NetworkCred.Password = "54321";
+                NetworkCred.UserName = "x";
+                NetworkCred.Password = "x";
                 //NetworkCred.UserName = "stefanus.ricky@londonsumatra.com";
                 //NetworkCred.Password = "Ricky123!";
                 smtp.UseDefaultCredentials = true;
