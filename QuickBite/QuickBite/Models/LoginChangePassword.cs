@@ -19,7 +19,7 @@ namespace QuickBite.Models
             string strSql = "UPDATE [User_Profile] SET [Password]=@NewPassword WHERE [User_Email]=@Username AND [Password]=@OldPassword";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=210.5.41.102;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     using (SqlCommand cmd = new SqlCommand(strSql, cn))
