@@ -20,7 +20,7 @@ namespace QuickBite.Models
                 string strSql = "SELECT  A.[name],A.[urlLink],A.[banner],C.publishdate FROM [QuickBite].[dbo].[Banner] A inner join Movie C on C.ID=A.movieID WHERE A.[status]=0 order by A.id desc";
                 try
                 {
-                    using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                    using (SqlConnection cn = new SqlConnection("x"))
                     {
                         cn.Open();
                         SqlCommand cmd = new SqlCommand(strSql, cn);
