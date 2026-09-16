@@ -50,7 +50,7 @@ namespace QuickBite.Models
             strSql = strSql + " [QuickBite].[dbo].[Cast] C on A.CastID=C.ID inner join [QuickBite].[dbo].[Movie] D on A.CastGroupID=D.CastGroupID inner join [QuickBite].[dbo].[Genre] E on D.genreID=E.ID  where D.ID=" + userid;
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSql, cn);
