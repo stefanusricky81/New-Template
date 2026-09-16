@@ -37,7 +37,7 @@ namespace QuickBite.Models
         {
             try
             {
-                string AA = "http://cms.lawaapp.com/QuickBite/resetpassword.aspx?c=" + pwd;
+                string AA = "http://xyz.com/QuickBite/resetpassword.aspx?c=" + pwd;
                 string name = new LoginForgotPassword().SelectName(username1);
                 string notemsg = "";
 
@@ -58,7 +58,7 @@ namespace QuickBite.Models
 
                 string useremail = username1;
                 StringBuilder strMessage = new StringBuilder();
-                string SendFrom = "alert@forest-interactive.com";
+                string SendFrom = "email";
                 string SendTo = useremail;
                 string newstitle = "Reset Password QuickBite";
 
@@ -66,12 +66,12 @@ namespace QuickBite.Models
                 SmtpClient client = new SmtpClient();
                 client.DeliveryMethod = SmtpDeliveryMethod.Network;
                 client.EnableSsl = true;
-                client.Host = "smtp.office365.com";
+                client.Host = "smtp";
                 client.Port = 587;
 
 
                 // setup Smtp authentication
-                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("alert@forest-interactive.com", "Server9@9@");
+                System.Net.NetworkCredential credentials = new System.Net.NetworkCredential("user", "pass");
                 client.UseDefaultCredentials = true;
                 client.Credentials = credentials;
 
@@ -101,7 +101,7 @@ namespace QuickBite.Models
         {
             get
             {
-                return "Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13";
+                return "x";
             }
         }
 
