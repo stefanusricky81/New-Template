@@ -19,7 +19,7 @@ namespace QuickBite.Models
             string strSql = "Update [QuickBite].[dbo].[Users] set NotificationPush=@regtype where Username=@emails and FullName=@username";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     using (SqlCommand cmd = new SqlCommand(strSql, cn))
