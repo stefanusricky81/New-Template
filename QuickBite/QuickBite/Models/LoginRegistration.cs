@@ -21,7 +21,7 @@ namespace QuickBite.Models
             strSql += "VALUES(@User_Email,@First_Name,@Password,@Locked,GETDATE(),@Guid,@SecretKey,@RegisterType,@ads)";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     using (SqlCommand cmd = new SqlCommand(strSql, cn))
