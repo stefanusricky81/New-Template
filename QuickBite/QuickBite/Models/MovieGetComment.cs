@@ -19,7 +19,7 @@ namespace QuickBite.Models
             string strSql = " Select B.Username,B.FullName,A.Comments,C.title  FROM [QuickBite].[dbo].[Comment] A inner join [QuickBite].[dbo].Users B on A.userID = B.userID inner join [QuickBite].[dbo].Movie c on A.movieID = C.ID where A.movieID=" + id + " order by A.datecreated desc";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSql, cn);
