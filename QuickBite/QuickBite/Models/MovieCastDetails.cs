@@ -29,7 +29,7 @@ namespace QuickBite.Models
             strSql = strSql + " [QuickBite].[dbo].[Movie] D on A.CastGroupID=D.CastGroupID where C.ID=" + Castid;
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSql, cn);
