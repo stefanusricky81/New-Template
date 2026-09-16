@@ -34,7 +34,7 @@ namespace QuickBite.Models
             string strSql = "SELECT "+name+" FROM [QuickBite].[dbo].[Movie] A inner join  [QuickBite].[dbo].[CastGroup] B on A.title=B.CastGroupName inner join  [QuickBite].[dbo].[ActorGroups] C on A.CastGroupId=C.CastGroupId inner join  [QuickBite].[dbo].[Cast] D on D.ID =C.CastID  where  A.title like '" + title + "' and D.Name like '" + cast + "'";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSql, cn);
