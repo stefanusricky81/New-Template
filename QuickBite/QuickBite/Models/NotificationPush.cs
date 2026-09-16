@@ -17,7 +17,7 @@ namespace QuickBite.Models
             string strSql = "Select [Messages] from [QuickBite].[dbo].[Notification] where ActiveStatus='true'";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     using (SqlCommand cmd = new SqlCommand(strSql, cn))
