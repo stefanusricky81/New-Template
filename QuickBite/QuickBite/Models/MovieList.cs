@@ -17,7 +17,7 @@ namespace QuickBite.Models
             string strSql = "SELECT Id,Thumbnail FROM [QuickBite].[dbo].[Movie] WHERE [status]=1 order by datecreated desc";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x3"))
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSql, cn);
