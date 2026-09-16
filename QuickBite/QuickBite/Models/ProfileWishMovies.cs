@@ -24,7 +24,7 @@ namespace QuickBite.Models
             string strSql = "  select B.ID, B.title,B.thumbnail,B.[relaseDate],C.title as genre, userRate from [QuickBite].[dbo].[Wishlist] A inner join [QuickBite].[dbo].[Movie] B  on A.WishID=B.ID inner join [QuickBite].[dbo].[Genre] C on B.genreID = C.ID inner join [QuickBite].[dbo].[Rating] D on A.UserName =D.UserID where A.WishType='Wish' and A.Status='true' and D.UserID=@users ";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     using (SqlCommand cmd = new SqlCommand(strSql, cn))
