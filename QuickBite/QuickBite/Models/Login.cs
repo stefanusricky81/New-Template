@@ -24,7 +24,7 @@ namespace QuickBite.Models
             string strSql = "SELECT [UserName],[FullName],[RegisterType],[userid] FROM [Users] WHERE [UserName]=@User_Email AND [Password]=@Password AND [status]=@Locked";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     SqlCommand cmd = new SqlCommand(strSql, cn);
