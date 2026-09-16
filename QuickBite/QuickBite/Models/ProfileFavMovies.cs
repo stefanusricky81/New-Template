@@ -25,7 +25,7 @@ namespace QuickBite.Models
             string strSql = " select thumbnail,B.ID," + col + " from [QuickBite].[dbo].[Favourite] A inner join [QuickBite].[dbo].[" + type + "] B on A.FavId=B.ID where A.FavType=@table and A.status='true' and A.UserName=@users";
             try
             {
-                using (SqlConnection cn = new SqlConnection("Data Source=localhost;Initial Catalog=QuickBite;Persist Security Info=True;User ID=dbuser;Password=celcom2@13"))
+                using (SqlConnection cn = new SqlConnection("x"))
                 {
                     cn.Open();
                     using (SqlCommand cmd = new SqlCommand(strSql, cn))
